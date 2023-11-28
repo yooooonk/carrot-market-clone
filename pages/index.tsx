@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           CheckOut
         </button>
       </div>
-      <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+      <div className="bg-white rounded-3xl shadow-xl overflow-hidden group">
         <div className="bg-blue-500 p-6 pb-14">
           <span className="text-white text-2xl">Profile</span>
         </div>
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
               <span className="block  text-center text-gray-400">Orders</span>
               <span className="block text-center">340</span>
             </div>
-            <div className="h-24 w-24 bg-red-400 rounded-full " />
+            <div className="h-24 w-24 bg-red-400 rounded-full group-hover:bg-red-200 " />
             <div className="flex-col">
               <span className="block text-center text-gray-400">Spend</span>
               <span className="block text-center">$2400</span>
@@ -66,9 +66,9 @@ const Home: NextPage = () => {
           <div className="text-sm text-gray-300">Chaire</div>
           <div className="flex justify-between">
             <span className="space-x-2">
-              <button className="w-5 h-5 rounded-full bg-yellow-500" />
-              <button className="w-5 h-5 rounded-full bg-red-500" />
-              <button className="w-5 h-5 rounded-full bg-indigo-500" />
+              <button className="w-5 h-5 rounded-full bg-yellow-500 focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition" />
+              <button className="w-5 h-5 rounded-full bg-red-500 focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition" />
+              <button className="w-5 h-5 rounded-full bg-indigo-500 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition" />
             </span>
             <span>
               <span className="bg-blue-100 w-10 h-10 px-2 py-1 rounded-md">
